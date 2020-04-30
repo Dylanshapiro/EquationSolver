@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+
+/* unvisited link */
+a
+{
+  color: #D35B3F;
+}
+
+body
+{
+	background: #B0C38D;
+}
+
+
+input[type=text], input[type=date], input[type=time], input[type=password], select, textarea, button {
+    background-color: #DED797;
+    padding: 5px;
+    border: 1px solid #31595E;
+    color: #000000;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+input[type=checkbox]{
+    font-size: 18px;
+    font-family: Raleway_Bold;
+}
+
+h1
+{
+    color: #FFF;
+    font-size: 28px;
+    font-family: Raleway_Bold;
+
+}
+h2
+{
+    color: #c9c9c9;
+    font-size: 22px;
+    font-family: Raleway_Bold;
+    margin: 0px;
+    padding:0px;
+
+}
+h3
+{
+    color: #FFF;
+    font-size: 40px;
+    font-family: Raleway_Bold;
+    margin:0px;
+    padding: 0px;
+    padding-top: 30px;
+
+}
+
+
+.centered{
+    text-align:center;
+    font-size: 18px;
+    margin: auto;
+}
+
+
+/*
+* Styling of main buttons in application
+*/
+.mainBtn {
+    -webkit-transition-duration: 0.4s;
+    background-color: #DED797;
+    border: 2px solid #31595E;
+    padding: 10px;
+    transition-duration: 0.4s;
+    font-size: 32px;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+    cursor: pointer;
+    width: 388px;
+    height: 64px;
+}
+
+.mainBtn:hover:not([disabled]) {
+    bborder: 2px solid #31595E;
+    color: #000000;
+    background-color: #31595E;
+}
+
+
+.mainBtn:hover.delete:hover{
+    border: 2px solid #ff0000;
+    color: #000000;
+    background-color: #ff0000;
+}
+
+.mainBtn:disabled {
+    border: 2px solid #BDBDBD;
+    color: #BDBDBD;
+    cursor: default;
+}
+
+.mainBtn:disabled:hover {
+    bborder: 2px solid #BDBDBD;
+    color: #BDBDBD;
+}

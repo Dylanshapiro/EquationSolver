@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div class="centered">
+        <h1>Original Image</h1>
+        <img src="{{ url_for('main.send_file', filename=pageData['Original']) }}" width="640" height="360"><br>
+        <h1>Boxed Image</h1>
+        <img src="{{ url_for('main.send_file', filename=pageData['Boxed']) }}" width="640" height="360"><br>
+        <h1>Equation<br>{{ pageData["Equation"] }}<br>
+        Answer<br>{{ pageData["Answer"] }}</h1><br>
+        <a href="{{ url_for('main.upload_file') }}">
+            <button class='mainBtn'>
+                Try Another!
+            </button>
+        </a>
+
+    </div>
+</body>
+</html>
